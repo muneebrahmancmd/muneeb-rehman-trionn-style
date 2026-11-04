@@ -7,7 +7,6 @@
 
 Hi, I'm Muneeb Rehman — a creative developer, web designer, graphic designer and AI enthusiast from Pakistan. This portfolio is built around bold, award-style motion: a 3D hero mark, gallery showcases, and live previews of my shipped websites.
 
-> Layout and animation code come from [github.com/anshif099/TRIONN](https://github.com/anshif099/TRIONN). All original Trionn brand, people, clients, awards, mascot, photos and media were removed. Brand, text, work and socials are Muneeb Rehman's.
 
 ## ✨ Features
 
