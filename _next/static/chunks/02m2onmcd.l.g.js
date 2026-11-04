@@ -506,7 +506,7 @@
             }, []);
         return (0, r.useEffect)(() => {
             if ("loader" !== e || el.current) return;
-            el.current = !0;
+            el.current = !0; c(!0); u(); return;
             let t = g.current,
                 r = E.current,
                 n = j.current,
@@ -895,12 +895,12 @@
                     let n = 0;
                     t.forEach((t, r) => {
                         setTimeout(() => {
-                            u(N.current, 500, e => {
+                            u(N.current, 200, e => {
                                 t.style.transform = `scaleY(${.008+1.092*a(e)})`
                             }, () => {
                                 t.style.transform = "scaleY(1)", 10 == ++n && e()
                             })
-                        }, 38 * r)
+                        }, 12 * r)
                     })
                 }))
             }, []),
@@ -909,12 +909,12 @@
                     r = 0;
                 [...t].reverse().forEach((t, n) => {
                     setTimeout(() => {
-                        u(N.current, 420, e => {
+                        u(N.current, 168, e => {
                             t.style.transform = `scaleY(${1-e*e*e*1.092})`
                         }, () => {
                             t.style.transform = "scaleY(0)", 10 == ++r && e()
                         })
-                    }, 38 * n)
+                    }, 12 * n)
                 })
             }, []),
             A = (0, r.useCallback)(e => {
@@ -925,7 +925,7 @@
                     } = S();
                 t.forEach((e, t) => {
                     e.style.left = n[t].x + "px", e.style.top = n[t].y + "px", e.style.opacity = "1"
-                }), u(N.current, 840, e => {
+                }), u(N.current, 336, e => {
                     let l = a(e);
                     t.forEach((e, t) => {
                         e.style.left = n[t].x + (r[t].x - n[t].x) * l + "px", e.style.top = n[t].y + (r[t].y - n[t].y) * l + "px", e.style.transform = `translate(-50%,-50%) rotate(${720*i[t]*(1-l)}deg)`
@@ -940,7 +940,7 @@
                     } = S();
                 e.forEach((e, r) => {
                     e.style.left = t[r].x + "px", e.style.top = t[r].y + "px", e.style.opacity = "1"
-                }), u(N.current, 760, n => {
+                }), u(N.current, 304, n => {
                     let l = n * n * n;
                     e.forEach((e, s) => {
                         e.style.left = t[s].x + (r[s].x - t[s].x) * l + "px", e.style.top = t[s].y + (r[s].y - t[s].y) * l + "px", n > .6 && (e.style.opacity = String(1 - (n - .6) / .4))
@@ -951,14 +951,14 @@
             }, [S]),
             _ = (0, r.useCallback)(e => {
                 let t = v.current;
-                t && (t.textContent = e, t.style.opacity = "0", t.style.transform = "translate(-50%, calc(-50% + 100px))", u(N.current, 840, e => {
+                t && (t.textContent = e, t.style.opacity = "0", t.style.transform = "translate(-50%, calc(-50% + 100px))", u(N.current, 336, e => {
                     let r = a(e);
                     t.style.opacity = String(r), t.style.transform = `translate(-50%, calc(-50% + ${100*(1-r)}px))`
                 }))
             }, []),
             D = (0, r.useCallback)(e => {
                 let t = v.current;
-                t ? u(N.current, 760, e => {
+                t ? u(N.current, 304, e => {
                     let r = e * e * e;
                     t.style.opacity = String(1 - r), t.style.transform = `translate(-50%, calc(-50% + ${-100*r}px))`
                 }, () => {

@@ -555,7 +555,7 @@
                 A.current[e] = t
             }, []),
             C = (0, E.useRef)({
-                imgs: Array(371),
+                imgs: Array(72),
                 loaded: 0,
                 preloading: !1,
                 videoIdx: 0,
@@ -868,11 +868,11 @@
                 e.preloading = !0;
                 let t = "u" > typeof requestIdleCallback ? requestIdleCallback : e => setTimeout(e, 0),
                     r = l => {
-                        let n = Math.min(l + 20, 371),
+                        let n = Math.min(l + 20, 72),
                             a = 0,
                             i = n - l,
                             s = () => {
-                                a++, e.loaded++, 371 === e.loaded && L(0), a === i && n < 371 && t(() => r(n))
+                                a++, e.loaded++, 72 === e.loaded && L(0), a === i && n < 72 && t(() => r(n))
                             };
                         for (let t = l; t < n; t++) {
                             let r = new Image;
@@ -880,7 +880,7 @@
                         }
                     };
                 r(0)
-            }, [L, 371]);
+            }, [L, 72]);
         return (0, w.useGSAP)(() => {
             if (!c) return;
             let t = C.current;
@@ -999,7 +999,7 @@
             return x && w.observe(x), () => {
                 o.unregister(p), w.disconnect(), window.removeEventListener("resize", s), z(), t.cardsTL && t.cardsTL.kill(), N.current.tl && (N.current.tl.kill(), N.current.tl = null, N.current.targets = [])
             }
-        }, [D, B, L, P, z, q, I, F, 371, .35, .53, e, s, c]), (0, t.jsxs)("section", {
+        }, [D, B, L, P, z, q, I, F, 72, .35, .53, e, s, c]), (0, t.jsxs)("section", {
             ref: M,
             id: "muneeb-services",
             className: `relative min-h-dvh ${s?"h-full min-h-0 w-full":""}`,
